@@ -40,6 +40,7 @@ app.get('/messages', (request, response) => {
       //save the messages to an object
       let theData = { messages: db.data.messages };
       //send the messages to the client
+      console.log(theData);
       response.json(theData);
     });
 });
