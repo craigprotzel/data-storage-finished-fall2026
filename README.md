@@ -1,5 +1,5 @@
 Data Storage Workshop - Finished Code
-------------------------------------
+-------------------------------------
 
 This example was built using the starter code and steps outlined here
 https://github.com/craigprotzel/data-storage-starter
