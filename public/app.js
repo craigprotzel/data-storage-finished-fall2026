@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
 
   console.log("Client side js is loaded!");
 
-  //go and get the default data
+  //Go and get the default data
   fetch('/messages')
     .then(response => response.json())
     .then(data => {
@@ -26,7 +26,6 @@ window.addEventListener('load', () => {
     .catch(error => {
       console.log(error)
     });
-
 
   //Create an event listener to collect and POST data
   let msgButton = document.getElementById('msg-submit');
@@ -58,7 +57,7 @@ window.addEventListener('load', () => {
         console.log("Did this work?");
         console.log(data);
 
-        //add the new message to the page
+        //Add the new message to the page
         let feed = document.getElementById('feed');
         let currentEl = document.createElement('p');
         currentEl.innerHTML = currentName + " - " + currentMessage;
@@ -71,10 +70,5 @@ window.addEventListener('load', () => {
       .catch(error => {
         console.log(error);
       });
-
-
   });
-
-
-
 });
